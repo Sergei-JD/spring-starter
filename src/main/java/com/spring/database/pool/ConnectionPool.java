@@ -1,4 +1,4 @@
-package com.spring.database.database.pool;
+package com.spring.database.pool;
 
 import org.springframework.beans.factory.InitializingBean;
 

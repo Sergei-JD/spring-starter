@@ -1,6 +1,6 @@
-package com.spring.database.database.repisitory;
+package com.spring.database.repisitory;
 
-import com.spring.database.database.pool.ConnectionPool;
+import com.spring.database.pool.ConnectionPool;
 
 public class UserRepository {
 
