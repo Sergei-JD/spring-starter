@@ -21,6 +21,12 @@ public class InjectBeanPostProcessor implements BeanPostProcessor, ApplicationCo
                     ReflectionUtils.makeAccessible(field);
                     ReflectionUtils.setField(field, bean, beanToInject);
                 });
+
+        return bean;
+    }
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         return bean;
     }
 
