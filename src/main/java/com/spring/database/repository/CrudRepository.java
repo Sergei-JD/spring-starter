@@ -1,4 +1,4 @@
-package com.spring.database.repisitory;
+package com.spring.database.repository;
 
 import java.util.Optional;
 

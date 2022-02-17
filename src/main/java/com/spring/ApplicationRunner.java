@@ -1,8 +1,7 @@
 package com.spring;
 
 import com.spring.database.pool.ConnectionPool;
-import com.spring.database.repisitory.CompanyRepository;
-import com.spring.database.repisitory.CrudRepository;
+import com.spring.database.repository.CrudRepository;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

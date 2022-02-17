@@ -1,4 +1,4 @@
-package com.spring.database.repisitory;
+package com.spring.database.repository;
 
 import com.spring.database.pool.ConnectionPool;
 import org.springframework.stereotype.Repository;
