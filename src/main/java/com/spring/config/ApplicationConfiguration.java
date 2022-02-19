@@ -1,35 +1,19 @@
 package com.spring.config;
 
 import com.spring.database.pool.ConnectionPool;
-import com.spring.database.repository.CrudRepository;
 import com.spring.database.repository.UserRepository;
 import com.web.config.WebConfiguration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
 import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-
-import static org.springframework.context.annotation.ComponentScan.*;
 
 //@ImportResource("classpath:application.xml")
 @Import(WebConfiguration.class)
 @Configuration(proxyBeanMethods = true)
-@PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = "com.spring",
-useDefaultFilters = false,
-includeFilters = {
-        @Filter(type = FilterType.ANNOTATION, value = Component.class),
-        @Filter(type = FilterType.ASSIGNABLE_TYPE, value = CrudRepository.class),
-        @Filter(type = FilterType.REGEX, pattern = "com\\..+Repository")
-})
 public class ApplicationConfiguration {
 
     @Bean("pool2")
