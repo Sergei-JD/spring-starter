@@ -1,6 +1,6 @@
 package com.spring.integration.service;
 
-import com.spring.annotation.IT;
+import com.spring.integration.annotation.IT;
 import com.spring.config.DatabaseProperties;
 import com.spring.dto.CompanyReadDto;
 import com.spring.service.CompanyService;
