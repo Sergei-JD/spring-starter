@@ -20,6 +20,15 @@ db:
       timeout: 3
 
 spring.profiles.active: qa
+
+logging:
+  level:
+    root: INFO
+    com.spring.database.pool: INFO
+  file:
+    name: com.log
+    path: /
+
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/postgres
@@ -30,11 +39,4 @@ spring:
     properties.hibernate:
       show_sql: true
       format_sql: true
-
-logging:
-  level:
-    root: INFO
-    com.spring.database.pool: INFO
-  file:
-    name: com.log
-    path: /
+      hbm2ddl.auto: validate
