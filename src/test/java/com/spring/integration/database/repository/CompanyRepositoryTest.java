@@ -4,6 +4,7 @@ import com.spring.database.entity.Company;
 import com.spring.integration.annotation.IT;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.Commit;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -32,7 +33,7 @@ class CompanyRepositoryTest {
         var company = Company.builder()
                 .name("Apple1")
                 .locales(Map.of(
-                        "ru", "Apple описание",
+                        "ru", "Apple РѕРїРёСЃР°РЅРёРµ",
                         "en", "Apple description"
                 ))
                 .build();
