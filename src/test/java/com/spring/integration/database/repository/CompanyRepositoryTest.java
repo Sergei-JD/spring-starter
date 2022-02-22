@@ -31,7 +31,7 @@ class CompanyRepositoryTest {
     @Test
     void save() {
         var company = Company.builder()
-                .name("Apple1")
+                .name("Apple2")
                 .locales(Map.of(
                         "ru", "Apple описание",
                         "en", "Apple description"
